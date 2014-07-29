@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F26E03AF6C34B93A42F0D50 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFF8D2B4A1840E383B4F7CF /* libPods.a */; };
 		B77ACEEE198829430011045F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77ACEED198829430011045F /* Foundation.framework */; };
 		B77ACEF0198829430011045F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77ACEEF198829430011045F /* CoreGraphics.framework */; };
 		B77ACEF2198829430011045F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77ACEF1198829430011045F /* UIKit.framework */; };
@@ -22,6 +23,8 @@
 		B77ACF12198829430011045F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77ACEF1198829430011045F /* UIKit.framework */; };
 		B77ACF1A198829430011045F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B77ACF18198829430011045F /* InfoPlist.strings */; };
 		B77ACF1C198829430011045F /* BeaconsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77ACF1B198829430011045F /* BeaconsDemoTests.m */; };
+		B77ACF27198832230011045F /* BeaconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B77ACF26198832230011045F /* BeaconCell.m */; };
+		B77ACF2A198837720011045F /* BeaconInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77ACF29198837720011045F /* BeaconInfoController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		58D128D39C3742689B648801 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B77ACEEA198829430011045F /* BeaconsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77ACEED198829430011045F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B77ACEEF198829430011045F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +59,11 @@
 		B77ACF17198829430011045F /* BeaconsDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeaconsDemoTests-Info.plist"; sourceTree = "<group>"; };
 		B77ACF19198829430011045F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B77ACF1B198829430011045F /* BeaconsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconsDemoTests.m; sourceTree = "<group>"; };
+		B77ACF25198832230011045F /* BeaconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconCell.h; sourceTree = "<group>"; };
+		B77ACF26198832230011045F /* BeaconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconCell.m; sourceTree = "<group>"; };
+		B77ACF28198837720011045F /* BeaconInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconInfoController.h; sourceTree = "<group>"; };
+		B77ACF29198837720011045F /* BeaconInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconInfoController.m; sourceTree = "<group>"; };
+		FFFF8D2B4A1840E383B4F7CF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,7 @@
 				B77ACEF0198829430011045F /* CoreGraphics.framework in Frameworks */,
 				B77ACEF2198829430011045F /* UIKit.framework in Frameworks */,
 				B77ACEEE198829430011045F /* Foundation.framework in Frameworks */,
+				6F26E03AF6C34B93A42F0D50 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +98,7 @@
 				B77ACF15198829430011045F /* BeaconsDemoTests */,
 				B77ACEEC198829430011045F /* Frameworks */,
 				B77ACEEB198829430011045F /* Products */,
+				58D128D39C3742689B648801 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +118,7 @@
 				B77ACEEF198829430011045F /* CoreGraphics.framework */,
 				B77ACEF1198829430011045F /* UIKit.framework */,
 				B77ACF0F198829430011045F /* XCTest.framework */,
+				FFFF8D2B4A1840E383B4F7CF /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,6 +132,10 @@
 				B77ACF02198829430011045F /* Main_iPad.storyboard */,
 				B77ACF05198829430011045F /* ViewController.h */,
 				B77ACF06198829430011045F /* ViewController.m */,
+				B77ACF28198837720011045F /* BeaconInfoController.h */,
+				B77ACF29198837720011045F /* BeaconInfoController.m */,
+				B77ACF25198832230011045F /* BeaconCell.h */,
+				B77ACF26198832230011045F /* BeaconCell.m */,
 				B77ACF08198829430011045F /* Images.xcassets */,
 				B77ACEF4198829430011045F /* Supporting Files */,
 			);
@@ -162,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B77ACF1F198829440011045F /* Build configuration list for PBXNativeTarget "BeaconsDemo" */;
 			buildPhases = (
+				3D6F5EC62BCF417C8C9C4C2C /* Check Pods Manifest.lock */,
 				B77ACEE6198829430011045F /* Sources */,
 				B77ACEE7198829430011045F /* Frameworks */,
 				B77ACEE8198829430011045F /* Resources */,
+				A892ED27FC3D411C9668A9D7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,14 +266,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D6F5EC62BCF417C8C9C4C2C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A892ED27FC3D411C9668A9D7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B77ACEE6198829430011045F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B77ACF07198829430011045F /* ViewController.m in Sources */,
+				B77ACF2A198837720011045F /* BeaconInfoController.m in Sources */,
 				B77ACEFE198829430011045F /* AppDelegate.m in Sources */,
 				B77ACEFA198829430011045F /* main.m in Sources */,
+				B77ACF27198832230011045F /* BeaconCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +440,7 @@
 		};
 		B77ACF20198829440011045F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D128D39C3742689B648801 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -400,6 +454,7 @@
 		};
 		B77ACF21198829440011045F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58D128D39C3742689B648801 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -470,6 +525,7 @@
 				B77ACF21198829440011045F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B77ACF22198829440011045F /* Build configuration list for PBXNativeTarget "BeaconsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +534,7 @@
 				B77ACF24198829440011045F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
